@@ -1,0 +1,17 @@
+default: &default
+  adapter: mysql
+  username: root
+  password: 1Grahovskiy1
+  host: 127.0.0.1
+
+development:
+  <<: *default
+  database: swiper_production
+
+test:
+  <<: *default
+  database: swiper_production
+
+production:
+  <<: *default
+  database: swiper_production
